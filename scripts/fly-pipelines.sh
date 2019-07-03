@@ -7,7 +7,7 @@
 #fly -t lab unpause-pipeline -p deploy-cf
 
 ## Harbor
-fly -t ci set-pipeline -p deploy-harbor -c pipelines/standard-product-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -v product=harbor-container-registry -n
+fly -t ci set-pipeline -p deploy-harbor -c pipelines/standard-product-pipeline.yml -l environments/aws/lab/common-pipeline-params.yml -v product=harbor-container-registry -n
 fly -t ci unpause-pipeline -p deploy-harbor
 
 ## PKS
