@@ -1,0 +1,3 @@
+hostname: harbor.pcf-aws.jagapps.co
+network_name: infrastructure
+singleton_availability_zone: us-east-1d
