@@ -37,6 +37,7 @@ product-properties:
     value: ((with_notary))
 resource-config:
   harbor-app:
+    elb_names: ((harbor-app_elb_names))
     instance_type:
       id: ((harbor-app_instance_type))
     persistent_disk:
