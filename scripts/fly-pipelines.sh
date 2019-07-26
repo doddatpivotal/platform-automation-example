@@ -11,8 +11,8 @@ fly -t ci set-pipeline -p deploy-harbor -c pipelines/standard-product-pipeline.y
 fly -t ci unpause-pipeline -p deploy-harbor
 
 ## PKS
-#fly -t lab set-pipeline -p deploy-pks -c pipelines/standard-product-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -v product=pivotal-container-service -n
-#fly -t lab unpause-pipeline -p deploy-pks
+fly -t lab set-pipeline -p deploy-pks -c pipelines/standard-product-pipeline.yml -l environments/aws/lab/common-pipeline-params.yml -v product=pivotal-container-service -n
+fly -t lab unpause-pipeline -p deploy-pks
 
 ## Rabbit MQ
 #fly -t lab set-pipeline -p deploy-rabbit -c pipelines/standard-product-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -v product=p-rabbitmq -n
