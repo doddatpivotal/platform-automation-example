@@ -7,7 +7,7 @@ cloud_provider/aws/iam_instance_profile_master: pcf-aws_pks-master
 cloud_provider/aws/iam_instance_profile_worker: pcf-aws_pks-worker
 
 uaa_oidc: true
-uaa/ldap/url: ldap://ldap.jumpcloud.com:636
+uaa/ldap/url: ldaps://ldap.jumpcloud.com:636
 uaa/ldap/credentials_identity: uid=pksbindjaime,ou=Users,o=5ca651a9852eac5d7270fe5a,dc=jumpcloud,dc=com
 uaa/ldap/search_base: ou=Users,o=5ca651a9852eac5d7270fe5a,dc=jumpcloud,dc=com
 uaa/ldap/search_filter: uid={0}
