@@ -15,14 +15,21 @@ if [ ! -f ${versionfile} ]; then
   echo "Must create ${versionfile}"
   exit 1
 fi
+echo "versionfile ${versionfile}"
 version=$(bosh interpolate ${versionfile} --path /product-version)
+scrubbedversion=$(cut -d'-' -f1 <<< ${version})
+#scrubbedversion=$(echo ${version} | awk 'BEGIN {FS="-"}; { print $1}')
+echo "version ${version}"
 glob=$(bosh interpolate ${versionfile} --path /pivnet-file-glob)
 slug=$(bosh interpolate ${versionfile} --path /pivnet-product-slug)
 
 tmpdir=environments/${iaas}/tile-configs/${product}-config
+echo "tmpdir ${tmpdir}"
+echo "product ${product}"
 mkdir -p ${tmpdir}
 om config-template --output-directory=${tmpdir} --pivnet-api-token ${PIVNET_TOKEN} --pivnet-product-slug  ${slug} --product-version ${version} --product-file-glob ${glob}
-wrkdir=$(find ${tmpdir}/${product} -name "${version}*")
+wrkdir=$(find ${tmpdir}/${product} -name "${scrubbedversion}*")
+echo "wrkdir ${wrkdir}"
 if [ ! -f ${wrkdir}/product.yml ]; then
   echo "Something wrong with configuration as expecting ${wrkdir}/product.yml to exist"
   exit 1

@@ -1,5 +1,7 @@
 features/cloud_provider-aws.yml
 features/uaa-ldap.yml
+features/oidc_selector-enabled.yml
+features/telemetry_selector-disabled.yml
 network/3-az-configuration.yml
 resource/pivotal-container-service_elb_names.yml
 optional/add-uaa-ldap-first_name_attribute.yml

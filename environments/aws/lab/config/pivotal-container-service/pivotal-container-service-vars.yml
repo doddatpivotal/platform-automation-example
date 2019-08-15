@@ -6,7 +6,6 @@ singleton_availability_zone: us-east-1d
 cloud_provider/aws/iam_instance_profile_master: pcf-aws_pks-master
 cloud_provider/aws/iam_instance_profile_worker: pcf-aws_pks-worker
 
-uaa_oidc: true
 uaa/ldap/url: ldaps://ldap.jumpcloud.com:636
 uaa/ldap/credentials_identity: uid=pksbindjaime,ou=Users,o=5ca651a9852eac5d7270fe5a,dc=jumpcloud,dc=com
 uaa/ldap/search_base: ou=Users,o=5ca651a9852eac5d7270fe5a,dc=jumpcloud,dc=com
@@ -18,6 +17,10 @@ uaa/ldap/last_name_attribute: sn
 uaa/ldap/mail_attribute_name: mail
 uaa/ldap/ldap_referrals:
 uaa/ldap/external_groups_whitelist: admins,clusteradmins,auditors,developers
+oidc_selector/enabled/username_prefix: 'oidc:'
+oidc_selector/enabled/username_claim: user_name
+oidc_selector/enabled/groups_prefix: 'oidc:'
+oidc_selector/enabled/groups_claim: roles
 
 az2_name: us-east-1e
 az3_name: us-east-1f
