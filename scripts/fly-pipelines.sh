@@ -1,5 +1,5 @@
 ## OM and Director
-fly -t ci set-pipeline -p deploy-om-and-director -c pipelines/om-and-director-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -n
+fly -t ci set-pipeline -p deploy-om-and-director -c pipelines/om-and-director-pipeline.yml -l environments/aws/lab/common-pipeline-params.yml -n
 fly -t ci unpause-pipeline -p deploy-om-and-director
 
 ## PAS
