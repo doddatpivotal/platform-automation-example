@@ -138,6 +138,7 @@ jobs:
         vars/environments/((iaas))/((foundation))/config-director/vars/infra.yml
         vars/environments/((iaas))/((foundation))/config-director/vars/opsman.yml
         secrets/environments/((iaas))/((foundation))/config-director/secrets/opsman.yml
+        secrets/environments/((iaas))/((foundation))/config-director/secrets/director.yml
         secrets/environments/((iaas))/((foundation))/config-common/secrets/pivnet.yml
 
     ensure: &make-state-commit
