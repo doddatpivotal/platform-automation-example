@@ -1,6 +1,6 @@
 ## OM and Director
-#fly -t lab set-pipeline -p deploy-om-and-director -c pipelines/om-and-director-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -n
-#fly -t lab unpause-pipeline -p deploy-om-and-director
+fly -t ci set-pipeline -p deploy-om-and-director -c pipelines/om-and-director-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -n
+fly -t ci unpause-pipeline -p deploy-om-and-director
 
 ## PAS
 #fly -t lab set-pipeline -p deploy-cf -c pipelines/standard-product-pipeline.yml -l environments/vsphere/lab/common-pipeline-params.yml -v product=cf -n

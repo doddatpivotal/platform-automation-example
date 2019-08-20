@@ -195,6 +195,7 @@ product-properties:
     value: ((worker_max_in_flight))
 resource-config:
   pivotal-container-service:
+    additional_vm_extensions: ((pivotal-container-service_additional_vm_extensions))
     elb_names: ((pivotal-container-service_elb_names))
     instance_type:
       id: ((pivotal-container-service_instance_type))

@@ -1,0 +1,3 @@
+iaas: aws
+# Instance ID of the AWS VM
+vm_id: i-01d17c19b541373d8

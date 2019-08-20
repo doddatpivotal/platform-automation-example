@@ -26,6 +26,7 @@ az2_name: us-east-1e
 az3_name: us-east-1f
 
 pivotal-container-service_elb_names: [alb:pcf-aws-pks-tg-8443,alb:pcf-aws-pks-tg-9021]
+pivotal-container-service_additional_vm_extensions: [pks-api-lb-security-groups]
 
 plan1_selector/active/name: "small"
 plan1_selector/active/description: "1 master, 3 workers with privileged containers"
