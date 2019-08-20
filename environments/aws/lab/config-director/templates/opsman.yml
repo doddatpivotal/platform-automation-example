@@ -15,10 +15,10 @@ opsman-configuration:
     private_ip: ((opsman_private_ip))
     # Required if use_instance_profile is false
     # omit if using Instance Profiles
-    access_key_id: ((aws_access_key_id))
-    secret_access_key: ((aws_secret_access_key))
+    # access_key_id: ((aws_access_key_id))
+    # secret_access_key: ((aws_secret_access_key))
     # If using Instance Profiles (omit if using AWS Credentials)
-    use_instance_profile: false # default false
+    use_instance_profile: true # default false
     iam_instance_profile_name: pcf-aws_ops_manager
     # Optional, necessary if a role is needed to authorize the instance profile
     assume_role: arn:aws:iam::453136613866:role/pcf-aws_om_role
