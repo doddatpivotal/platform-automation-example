@@ -63,21 +63,21 @@ networks-configuration:
       cidr: ((aws_infrastructure_subnet_cidr_0))
       reserved_ip_ranges: ((aws_infrastructure_subnet_reserv_0))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_infrastructure_subnet_cidr_0))
+      gateway: ((aws_infrastructure_subnet_gateway_0))
       availability_zone_names:
       - ((az1))
     - iaas_identifier: ((aws_infrastructure_subnet_id_1))
       cidr: ((aws_infrastructure_subnet_cidr_1))
       reserved_ip_ranges: ((aws_infrastructure_subnet_reserv_1))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_infrastructure_subnet_cidr_1))
+      gateway: ((aws_infrastructure_subnet_gateway_1))
       availability_zone_names:
       - ((az2))
     - iaas_identifier: ((aws_infrastructure_subnet_id_2))
       cidr: ((aws_infrastructure_subnet_cidr_2))
       reserved_ip_ranges: ((aws_infrastructure_subnet_reserv_2))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_infrastructure_subnet_cidr_2))
+      gateway: ((aws_infrastructure_subnet_gateway_2))
       availability_zone_names:
       - ((az3))
   - name: pas
@@ -86,21 +86,21 @@ networks-configuration:
       cidr: ((aws_pas_subnet_cidr_0))
       reserved_ip_ranges: ((aws_pas_subnet_reserv_0))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pas_subnet_cidr_0))
+      gateway: ((aws_pas_subnet_gateway_0))
       availability_zone_names:
       - ((az1))
     - iaas_identifier: ((aws_pas_subnet_id_1))
       cidr: ((aws_pas_subnet_cidr_1))
       reserved_ip_ranges: ((aws_pas_subnet_reserv_1))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pas_subnet_cidr_1))
+      gateway: ((aws_pas_subnet_gateway_1))
       availability_zone_names:
       - ((az2))
     - iaas_identifier: ((aws_pas_subnet_id_2))
       cidr: ((aws_pas_subnet_cidr_2))
       reserved_ip_ranges: ((aws_pas_subnet_reserv_2))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pas_subnet_cidr_2))
+      gateway: ((aws_pas_subnet_gateway_2))
       availability_zone_names:
       - ((az3))
   - name: services
@@ -109,21 +109,21 @@ networks-configuration:
       cidr: ((aws_services_subnet_cidr_0))
       reserved_ip_ranges: ((aws_services_subnet_reserv_0))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_services_subnet_cidr_0))
+      gateway: ((aws_services_subnet_gateway_0))
       availability_zone_names:
       - ((az1))
     - iaas_identifier: ((aws_services_subnet_id_1))
       cidr: ((aws_services_subnet_cidr_1))
       reserved_ip_ranges: ((aws_services_subnet_reserv_1))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_services_subnet_cidr_1))
+      gateway: ((aws_services_subnet_gateway_1))
       availability_zone_names:
       - ((az2))
     - iaas_identifier: ((aws_services_subnet_id_2))
       cidr: ((aws_services_subnet_cidr_2))
       reserved_ip_ranges: ((aws_services_subnet_reserv_2))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_services_subnet_cidr_2))
+      gateway: ((aws_services_subnet_gateway_2))
       availability_zone_names:
       - ((az3))
   - name: pks
@@ -132,21 +132,21 @@ networks-configuration:
       cidr: ((aws_pks_subnet_cidr_0))
       reserved_ip_ranges: ((aws_pks_subnet_reserv_0))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks_subnet_cidr_0))
+      gateway: ((aws_pks_subnet_gateway_0))
       availability_zone_names:
       - ((az1))
     - iaas_identifier: ((aws_pks_subnet_id_1))
       cidr: ((aws_pks_subnet_cidr_1))
       reserved_ip_ranges: ((aws_pks_subnet_reserv_1))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks_subnet_cidr_1))
+      gateway: ((aws_pks_subnet_gateway_1))
       availability_zone_names:
       - ((az2))
     - iaas_identifier: ((aws_pks_subnet_id_2))
       cidr: ((aws_pks_subnet_cidr_2))
       reserved_ip_ranges: ((aws_pks_subnet_reserv_2))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks_subnet_cidr_2))
+      gateway: ((aws_pks_subnet_gateway_2))
       availability_zone_names:
       - ((az3))
   - name: pks-services
@@ -155,21 +155,21 @@ networks-configuration:
       cidr: ((aws_pks-services_subnet_cidr_0))
       reserved_ip_ranges: ((aws_pks-services_subnet_reserv_0))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks-services_subnet_cidr_0))
+      gateway: ((aws_pks-services_subnet_gateway_0))
       availability_zone_names:
       - ((az1))
     - iaas_identifier: ((aws_pks-services_subnet_id_1))
       cidr: ((aws_pks-services_subnet_cidr_1))
       reserved_ip_ranges: ((aws_pks-services_subnet_reserv_1))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks-services_subnet_cidr_1))
+      gateway: ((aws_pks-services_subnet_gateway_1))
       availability_zone_names:
       - ((az2))
     - iaas_identifier: ((aws_pks-services_subnet_id_2))
       cidr: ((aws_pks-services_subnet_cidr_2))
       reserved_ip_ranges: ((aws_pks-services_subnet_reserv_2))
       dns: ((aws_vpc_dns))
-      gateway: ((aws_pks-services_subnet_cidr_2))
+      gateway: ((aws_pks-services_subnet_gateway_2))
       availability_zone_names:
       - ((az3))
 
