@@ -151,6 +151,9 @@ product-properties:
     value: Disabled
   .properties.syslog_selector:
     value: disabled
+  .properties.telemetry_installation_purpose_selector:
+    selected_option: demo_or_poc
+    value: demo_or_poc
   .properties.telemetry_selector:
     selected_option: disabled
     value: disabled
