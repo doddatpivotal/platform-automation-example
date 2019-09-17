@@ -21,4 +21,4 @@ opsman-configuration:
     use_instance_profile: true # default false
     iam_instance_profile_name: pcf-aws_ops_manager
     # Optional, necessary if a role is needed to authorize the instance profile
-    assume_role: arn:aws:iam::453136613866:role/pcf-aws_om_role
+    # assume_role: arn:aws:iam::453136613866:role/pcf-aws_om_role
