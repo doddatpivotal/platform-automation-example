@@ -4,3 +4,4 @@ opsman_public_ip: 3.229.200.42
 opsman_instance_type: r4.large
 opsman_security_group_id: sg-025f5fdd40878ed39
 opsman_keypair_name: pcf-aws-ops-manager-key
+opsman_username: admin
