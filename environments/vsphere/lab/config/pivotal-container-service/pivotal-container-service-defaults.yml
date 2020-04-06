@@ -1,8 +1,3 @@
-bosh-metric-sink-etcd: true
-bosh-metric-sink-kubelet: false
-bosh-metric-sink-node-exporter-master: false
-bosh-metric-sink-outputs: |
-  [[outputs.discard]]
 log_sink_resources_deploy: true
 metric_sink_resources_deploy: true
 network_selector_flannel_pod_network_cidr: 10.200.0.0/16
@@ -23,13 +18,14 @@ plan1_selector_active_name: small
 plan1_selector_active_worker_instances: 3
 telemetry_selector_enabled_billing_polling_interval: 60
 telemetry_selector_enabled_environment_provider: none
-telemetry_selector_enabled_telemetry_polling_interval: 600
+telemetry_selector_enabled_telemetry_polling_interval: 21600
 telemetry_selector_enabled_telemetry_url: https://vcsa.vmware.com/ph
 uaa_pks_cli_access_token_lifetime: 600
 uaa_pks_cli_refresh_token_lifetime: 21600
 uaa_pks_cluster_client_access_token_lifetime: 600
 uaa_pks_cluster_client_refresh_token_lifetime: 21600
 worker_max_in_flight: 4
+clone-db_post_deploy_state: default
 delete-all-clusters_pre_delete_state: default
 pks-nsx-t-precheck_post_deploy_state: default
 smoke-tests_post_deploy_state: default
@@ -39,3 +35,6 @@ wavefront-alert-deletion_pre_delete_state: default
 pivotal-container-service_instance_type: automatic
 pivotal-container-service_max_in_flight: default
 pivotal-container-service_persistent_disk_size: automatic
+pks-db_instance_type: automatic
+pks-db_max_in_flight: default
+pks-db_persistent_disk_size: automatic
